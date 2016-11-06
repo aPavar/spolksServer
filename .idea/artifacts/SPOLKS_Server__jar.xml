@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SPOLKS(Server):jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SPOLKS_Server__jar</output-path>
+    <root id="archive" name="SPOLKS(Server).jar">
+      <element id="module-output" name="SPOLKS(Server)" />
+    </root>
+  </artifact>
+</component>
