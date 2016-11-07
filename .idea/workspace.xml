@@ -32,7 +32,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
               <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,16 +42,18 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-511">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state relative-caret-position="-110">
+              <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
               <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#newConnection#0;class#Controller#0" expanded="false" />
                 <element signature="method#charArrayToByteArray#0;class#Controller#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -82,10 +86,17 @@
             <state relative-caret-position="1232">
               <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
               <folding>
+                <element signature="imports" expanded="false" />
                 <element signature="method#getSizeOfFile#0;class#File#0" expanded="false" />
                 <element signature="method#File#0;class#File#0" expanded="false" />
                 <element signature="method#File#1;class#File#0" expanded="false" />
                 <element signature="method#getNameOfFile#0;class#File#0" expanded="false" />
+                <element signature="e#812#813#0" expanded="false" />
+                <element signature="e#856#857#0" expanded="false" />
+                <element signature="e#891#892#0" expanded="false" />
+                <element signature="e#924#925#0" expanded="false" />
+                <element signature="e#974#975#0" expanded="false" />
+                <element signature="e#1018#1019#0" expanded="false" />
                 <element signature="method#getOnlyNameOfFile#0;class#File#0" expanded="false" />
               </folding>
             </state>
@@ -97,20 +108,29 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="462">
               <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#386#387#0" expanded="false" />
+                <element signature="e#424#425#0" expanded="false" />
+                <element signature="e#487#488#0" expanded="false" />
+                <element signature="e#541#542#0" expanded="false" />
+                <element signature="e#586#587#0" expanded="false" />
+                <element signature="e#630#631#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4642">
-              <caret line="436" column="0" selection-start-line="436" selection-start-column="0" selection-end-line="436" selection-end-column="0" />
+            <state relative-caret-position="352">
+              <caret line="477" column="46" selection-start-line="477" selection-start-column="46" selection-end-line="477" selection-end-column="46" />
               <folding>
-                <element signature="e#1384#1433#0" expanded="false" />
+                <element signature="e#1312#1361#0" expanded="false" />
                 <element signature="method#echoTelnet#0;class#Server#0" expanded="false" />
                 <element signature="method#timeTelnet#0;class#Server#0" expanded="false" />
+                <element signature="method#loadFile#0;class#Server#0" expanded="false" />
+                <element signature="method#readPackForFile#0;class#Server#0" expanded="false" />
                 <element signature="method#downloadFile#0;class#Server#0" expanded="false" />
                 <element signature="method#createListPackets#0;class#Server#0" expanded="false" />
                 <element signature="method#createListPackets#1;class#Server#0" expanded="false" />
@@ -123,8 +143,32 @@
                 <element signature="method#sendPackage#0;class#Server#0" expanded="false" />
                 <element signature="method#readPackage#0;class#Server#0" expanded="false" />
                 <element signature="method#getTime#0;class#Server#0" expanded="false" />
+                <element signature="method#createListPacketsUdp#1;class#Server#0" expanded="false" />
                 <element signature="method#downloadFileUdp#0;class#Server#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Separator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Separator/Separator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="110" column="38" selection-start-line="110" selection-start-column="38" selection-end-line="110" selection-end-column="38" />
+              <folding>
+                <element signature="method#parce#0;class#Separator#0" expanded="false" />
+                <element signature="method#parceUdp#0;class#Separator#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeaderUdp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/HeaderUdp/HeaderUdp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1012">
+              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -161,15 +205,16 @@
         <option value="$PROJECT_DIR$/src/com/company/KitOfHeaders/KitOfHeaders.java" />
         <option value="$PROJECT_DIR$/src/com/company/SpecialData/SpecialData.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Separator/Separator.java" />
         <option value="$PROJECT_DIR$/src/com/company/UndefinedProtocol/UndefinedProtocol.java" />
         <option value="$PROJECT_DIR$/src/com/company/Header/Header.java" />
         <option value="$PROJECT_DIR$/src/com/company/NameCommand/NameCommand.java" />
         <option value="$PROJECT_DIR$/src/com/company/File/File.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Server/Server.java" />
         <option value="$PROJECT_DIR$/src/com/company/StructureOfReturnValue/StructureOfReturnValue.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Controller/Controller.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/com/company/HeaderUdp/HeaderUdp.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Separator/Separator.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Server/Server.java" />
       </list>
     </option>
   </component>
@@ -183,7 +228,7 @@
     <option name="x" value="69" />
     <option name="y" value="-9" />
     <option name="width" value="1860" />
-    <option name="height" value="1084" />
+    <option name="height" value="1098" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -295,6 +340,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SPOLKS(Server)" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SPOLKS(Server)" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Separator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SPOLKS(Server)" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SPOLKS(Server)" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -777,11 +866,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="258507000" />
+    <option name="totallyTimeSpent" value="282168000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="69" y="-9" width="1860" height="1084" extended-state="0" />
-    <editor active="false" />
+    <frame x="69" y="-9" width="1860" height="1098" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -791,7 +880,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30361173" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2988889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33521444" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -800,7 +889,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3988889" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27891654" sideWeight="0.5053599" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -827,7 +916,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="53" />
+      <option name="time" value="56" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -836,25 +925,13 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/Separator/Separator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/NameCommand/NameCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -863,6 +940,8 @@
         <state relative-caret-position="0">
           <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
           <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#newConnection#0;class#Controller#0" expanded="false" />
             <element signature="method#charArrayToByteArray#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
@@ -888,10 +967,17 @@
         <state relative-caret-position="0">
           <caret line="82" column="5" selection-start-line="62" selection-start-column="3" selection-end-line="82" selection-end-column="5" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="method#getSizeOfFile#0;class#File#0" expanded="false" />
             <element signature="method#File#0;class#File#0" expanded="false" />
             <element signature="method#File#1;class#File#0" expanded="false" />
             <element signature="method#getNameOfFile#0;class#File#0" expanded="false" />
+            <element signature="e#812#813#0" expanded="false" />
+            <element signature="e#856#857#0" expanded="false" />
+            <element signature="e#891#892#0" expanded="false" />
+            <element signature="e#924#925#0" expanded="false" />
+            <element signature="e#974#975#0" expanded="false" />
+            <element signature="e#1018#1019#0" expanded="false" />
             <element signature="method#getOnlyNameOfFile#0;class#File#0" expanded="false" />
           </folding>
         </state>
@@ -901,7 +987,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#386#387#0" expanded="false" />
+            <element signature="e#424#425#0" expanded="false" />
+            <element signature="e#487#488#0" expanded="false" />
+            <element signature="e#541#542#0" expanded="false" />
+            <element signature="e#586#587#0" expanded="false" />
+            <element signature="e#630#631#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -917,9 +1010,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1384#1433#0" expanded="false" />
+            <element signature="e#1312#1361#0" expanded="false" />
             <element signature="method#echoTelnet#0;class#Server#0" expanded="false" />
             <element signature="method#timeTelnet#0;class#Server#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Server#0" expanded="false" />
+            <element signature="method#readPackForFile#0;class#Server#0" expanded="false" />
             <element signature="method#downloadFile#0;class#Server#0" expanded="false" />
             <element signature="method#createListPackets#0;class#Server#0" expanded="false" />
             <element signature="method#createListPackets#1;class#Server#0" expanded="false" />
@@ -932,6 +1027,7 @@
             <element signature="method#sendPackage#0;class#Server#0" expanded="false" />
             <element signature="method#readPackage#0;class#Server#0" expanded="false" />
             <element signature="method#getTime#0;class#Server#0" expanded="false" />
+            <element signature="method#createListPacketsUdp#1;class#Server#0" expanded="false" />
             <element signature="method#downloadFileUdp#0;class#Server#0" expanded="false" />
           </folding>
         </state>
@@ -963,7 +1059,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -972,6 +1070,8 @@
         <state relative-caret-position="0">
           <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
           <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#newConnection#0;class#Controller#0" expanded="false" />
             <element signature="method#charArrayToByteArray#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
@@ -997,10 +1097,17 @@
         <state relative-caret-position="0">
           <caret line="82" column="5" selection-start-line="62" selection-start-column="3" selection-end-line="82" selection-end-column="5" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="method#getSizeOfFile#0;class#File#0" expanded="false" />
             <element signature="method#File#0;class#File#0" expanded="false" />
             <element signature="method#File#1;class#File#0" expanded="false" />
             <element signature="method#getNameOfFile#0;class#File#0" expanded="false" />
+            <element signature="e#812#813#0" expanded="false" />
+            <element signature="e#856#857#0" expanded="false" />
+            <element signature="e#891#892#0" expanded="false" />
+            <element signature="e#924#925#0" expanded="false" />
+            <element signature="e#974#975#0" expanded="false" />
+            <element signature="e#1018#1019#0" expanded="false" />
             <element signature="method#getOnlyNameOfFile#0;class#File#0" expanded="false" />
           </folding>
         </state>
@@ -1010,7 +1117,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#386#387#0" expanded="false" />
+            <element signature="e#424#425#0" expanded="false" />
+            <element signature="e#487#488#0" expanded="false" />
+            <element signature="e#541#542#0" expanded="false" />
+            <element signature="e#586#587#0" expanded="false" />
+            <element signature="e#630#631#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1026,9 +1140,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1384#1433#0" expanded="false" />
+            <element signature="e#1312#1361#0" expanded="false" />
             <element signature="method#echoTelnet#0;class#Server#0" expanded="false" />
             <element signature="method#timeTelnet#0;class#Server#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Server#0" expanded="false" />
+            <element signature="method#readPackForFile#0;class#Server#0" expanded="false" />
             <element signature="method#downloadFile#0;class#Server#0" expanded="false" />
             <element signature="method#createListPackets#0;class#Server#0" expanded="false" />
             <element signature="method#createListPackets#1;class#Server#0" expanded="false" />
@@ -1041,6 +1157,7 @@
             <element signature="method#sendPackage#0;class#Server#0" expanded="false" />
             <element signature="method#readPackage#0;class#Server#0" expanded="false" />
             <element signature="method#getTime#0;class#Server#0" expanded="false" />
+            <element signature="method#createListPacketsUdp#1;class#Server#0" expanded="false" />
             <element signature="method#downloadFileUdp#0;class#Server#0" expanded="false" />
           </folding>
         </state>
@@ -1072,7 +1189,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1081,6 +1200,8 @@
         <state relative-caret-position="0">
           <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
           <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#newConnection#0;class#Controller#0" expanded="false" />
             <element signature="method#charArrayToByteArray#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
@@ -1106,10 +1227,17 @@
         <state relative-caret-position="0">
           <caret line="82" column="5" selection-start-line="62" selection-start-column="3" selection-end-line="82" selection-end-column="5" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="method#getSizeOfFile#0;class#File#0" expanded="false" />
             <element signature="method#File#0;class#File#0" expanded="false" />
             <element signature="method#File#1;class#File#0" expanded="false" />
             <element signature="method#getNameOfFile#0;class#File#0" expanded="false" />
+            <element signature="e#812#813#0" expanded="false" />
+            <element signature="e#856#857#0" expanded="false" />
+            <element signature="e#891#892#0" expanded="false" />
+            <element signature="e#924#925#0" expanded="false" />
+            <element signature="e#974#975#0" expanded="false" />
+            <element signature="e#1018#1019#0" expanded="false" />
             <element signature="method#getOnlyNameOfFile#0;class#File#0" expanded="false" />
           </folding>
         </state>
@@ -1119,7 +1247,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#386#387#0" expanded="false" />
+            <element signature="e#424#425#0" expanded="false" />
+            <element signature="e#487#488#0" expanded="false" />
+            <element signature="e#541#542#0" expanded="false" />
+            <element signature="e#586#587#0" expanded="false" />
+            <element signature="e#630#631#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1135,9 +1270,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1384#1433#0" expanded="false" />
+            <element signature="e#1312#1361#0" expanded="false" />
             <element signature="method#echoTelnet#0;class#Server#0" expanded="false" />
             <element signature="method#timeTelnet#0;class#Server#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Server#0" expanded="false" />
+            <element signature="method#readPackForFile#0;class#Server#0" expanded="false" />
             <element signature="method#downloadFile#0;class#Server#0" expanded="false" />
             <element signature="method#createListPackets#0;class#Server#0" expanded="false" />
             <element signature="method#createListPackets#1;class#Server#0" expanded="false" />
@@ -1150,6 +1287,7 @@
             <element signature="method#sendPackage#0;class#Server#0" expanded="false" />
             <element signature="method#readPackage#0;class#Server#0" expanded="false" />
             <element signature="method#getTime#0;class#Server#0" expanded="false" />
+            <element signature="method#createListPacketsUdp#1;class#Server#0" expanded="false" />
             <element signature="method#downloadFileUdp#0;class#Server#0" expanded="false" />
           </folding>
         </state>
@@ -1181,7 +1319,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1189,7 +1329,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1197,7 +1339,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1229,13 +1373,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Separator/Separator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="77" column="20" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/UndefinedProtocol/UndefinedProtocol.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1256,10 +1393,17 @@
         <state relative-caret-position="1232">
           <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="method#getSizeOfFile#0;class#File#0" expanded="false" />
             <element signature="method#File#0;class#File#0" expanded="false" />
             <element signature="method#File#1;class#File#0" expanded="false" />
             <element signature="method#getNameOfFile#0;class#File#0" expanded="false" />
+            <element signature="e#812#813#0" expanded="false" />
+            <element signature="e#856#857#0" expanded="false" />
+            <element signature="e#891#892#0" expanded="false" />
+            <element signature="e#924#925#0" expanded="false" />
+            <element signature="e#974#975#0" expanded="false" />
+            <element signature="e#1018#1019#0" expanded="false" />
             <element signature="method#getOnlyNameOfFile#0;class#File#0" expanded="false" />
           </folding>
         </state>
@@ -1286,18 +1430,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#386#387#0" expanded="false" />
+            <element signature="e#424#425#0" expanded="false" />
+            <element signature="e#487#488#0" expanded="false" />
+            <element signature="e#541#542#0" expanded="false" />
+            <element signature="e#586#587#0" expanded="false" />
+            <element signature="e#630#631#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/LastProg/Файлы отправки/HeaderUdp/HeaderUdp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="55" column="5" selection-start-line="5" selection-start-column="4" selection-end-line="55" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/HeaderUdp/HeaderUdp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#newConnection#0;class#Controller#0" expanded="false" />
+            <element signature="method#charArrayToByteArray#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Separator/Separator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="110" column="38" selection-start-line="110" selection-start-column="38" selection-end-line="110" selection-end-column="38" />
+          <folding>
+            <element signature="method#parce#0;class#Separator#0" expanded="false" />
+            <element signature="method#parceUdp#0;class#Separator#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4642">
-          <caret line="436" column="0" selection-start-line="436" selection-start-column="0" selection-end-line="436" selection-end-column="0" />
+        <state relative-caret-position="352">
+          <caret line="477" column="46" selection-start-line="477" selection-start-column="46" selection-end-line="477" selection-end-column="46" />
           <folding>
-            <element signature="e#1384#1433#0" expanded="false" />
+            <element signature="e#1312#1361#0" expanded="false" />
             <element signature="method#echoTelnet#0;class#Server#0" expanded="false" />
             <element signature="method#timeTelnet#0;class#Server#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Server#0" expanded="false" />
+            <element signature="method#readPackForFile#0;class#Server#0" expanded="false" />
             <element signature="method#downloadFile#0;class#Server#0" expanded="false" />
             <element signature="method#createListPackets#0;class#Server#0" expanded="false" />
             <element signature="method#createListPackets#1;class#Server#0" expanded="false" />
@@ -1310,34 +1520,9 @@
             <element signature="method#sendPackage#0;class#Server#0" expanded="false" />
             <element signature="method#readPackage#0;class#Server#0" expanded="false" />
             <element signature="method#getTime#0;class#Server#0" expanded="false" />
+            <element signature="method#createListPacketsUdp#1;class#Server#0" expanded="false" />
             <element signature="method#downloadFileUdp#0;class#Server#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-511">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="method#charArrayToByteArray#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>

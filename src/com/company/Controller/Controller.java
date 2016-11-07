@@ -23,6 +23,7 @@ import java.util.Date;
 public class Controller {
     public static int sizeOfPackage= 1024;
     public static int port=6000;
+    public static int sizeOfPackageUdp = 16384;
 
 public static void newConnection(Socket connectionSocket) throws IOException, ClassNotFoundException {
     String clientSentence;
@@ -49,10 +50,10 @@ public static void newConnection(Socket connectionSocket) throws IOException, Cl
     while (true) {
         Socket connectionSocket = welcomeSocket.accept();
         connectionSocket.setOOBInline(true);
-        connectionSocket.setKeepAlive(true);
-        connectionSocket.setTrafficClass(10);
+       // connectionSocket.setKeepAlive(true);
+      //  connectionSocket.setTrafficClass(10);
         connectionSocket.setSoTimeout(22000);
-        connectionSocket.setReceiveBufferSize(10000*Controller.sizeOfPackage);
+        connectionSocket.setReceiveBufferSize(1000*Controller.sizeOfPackage);
         connectionSocket.setSendBufferSize(2*Controller.sizeOfPackage);
         System.out.println("New Connection");
         newConnection(connectionSocket);

@@ -4,6 +4,7 @@ import com.company.CharacterTransferData.CharacterTransferData;
 import com.company.Controller.Controller;
 import com.company.File.File;
 import com.company.Header.Header;
+import com.company.HeaderUdp.HeaderUdp;
 import com.company.KitOfHeaders.KitOfHeaders;
 import com.company.NameCommand.NameCommand;
 import com.company.Separator.Separator;
@@ -13,10 +14,7 @@ import com.company.UndefinedProtocol.UndefinedProtocol;
 import com.sun.deploy.Environment;
 
 import java.io.*;
-import java.net.Socket;
-import java.net.SocketException;
-import java.net.SocketPermission;
-import java.net.SocketTimeoutException;
+import java.net.*;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
@@ -64,7 +62,7 @@ public class Server {
                                       System.exit(0);
                                   else{
                                       if(separator.getHeader().getNameCommand()==NameCommand.loadFileUdp)
-                                          loadFileUdp();
+                                          loadFileUdp(separator, socket);
                                       else{
                                           if(separator.getHeader().getNameCommand()==NameCommand.downloadFileUdp)
                                               downloadFileUdp();
@@ -433,9 +431,96 @@ public class Server {
         sendPackage(listOfPackets.get(0), toClient);
     }
 
-    public void loadFileUdp(){
+    public void loadFileUdp(Separator separator, Socket socket) throws IOException, ClassNotFoundException {
+        System.out.println("loadFileUdp");
+
+        String fileName = new String(separator.getMessage(), Charset.defaultCharset());
+
+      //  byte[] byteBufferTcp = new byte[Controller.sizeOfPackage];
+       // readPackFull(socket, byteBufferTcp);
+      //  System.out.println("after readpackFull");
+      //  separator.parce(byteBufferTcp);
+
+        int countOfPacketsUdp = separator.getHeader().getCountOfPacket();
+        System.out.println("countsOfPacketUdp = " + countOfPacketsUdp);
+
+
+
+        DatagramSocket dataGramSocket = new DatagramSocket(24001);
+        dataGramSocket.setSoTimeout(22000);
+        dataGramSocket.setSendBufferSize(2*Controller.sizeOfPackageUdp);
+        dataGramSocket.setReceiveBufferSize(1000*Controller.sizeOfPackageUdp);
+        byte[] dataFromClient = new byte[Controller.sizeOfPackageUdp];
+        byte[] dataToClient = new byte[Controller.sizeOfPackageUdp];
+        File file = new File();
+
+
+        for(int i = 0; i < countOfPacketsUdp; i++){
+
+            System.out.println(i);
+            DatagramPacket datagramPacketReceive = new DatagramPacket(dataFromClient, dataFromClient.length);
+            dataGramSocket.receive(datagramPacketReceive);
+            InetAddress inetAddress = datagramPacketReceive.getAddress();
+            int port = datagramPacketReceive.getPort();
+
+            separator.parceUdp(dataFromClient);
+
+            file.writeInfoInFile(fileName,separator.getMessageUdp(),i*(Controller.sizeOfPackageUdp-HeaderUdp.getSizeOfHeaderUdp()));
+
+            System.out.println("SizeOfMessageUdp :" + separator.getHeaderUdp().getSizeOfMessage());
+
+            DatagramPacket datagramPacketSend = new DatagramPacket(dataToClient,dataToClient.length, inetAddress,port );
+            dataGramSocket.send(datagramPacketSend);
+
+
+        }
+       // socket.getInputStream().skip(1000000);
+        readPackForFile(socket, dataFromClient);
+        System.out.println("EndFunctionUdpLoad");
+    }
+
+    public void createListPacketsUdp(){
 
     }
+
+    public void createListPacketsUdp(byte[] data, int sizeOfPacket,int numberOfPacket){
+
+
+        listOfPackets=new ArrayList<>();
+        HeaderUdp headerUdp=new HeaderUdp();
+        int i=0;
+
+
+        while(true) {
+            byte[] newData=new byte[sizeOfPacket];
+            headerUdp.setNumberOfPacket(i);
+
+            if((data.length-i*(sizeOfPacket- HeaderUdp.getSizeOfHeaderUdp()))>sizeOfPacket-HeaderUdp.getSizeOfHeaderUdp()){
+
+                headerUdp.setSizeOfMessage(sizeOfPacket-HeaderUdp.getSizeOfHeaderUdp());
+                headerUdp.setNumberOfPacket(numberOfPacket+i);
+                System.arraycopy(HeaderUdp.headerUdpToArrayOfBytes(headerUdp), 0, newData, 0, HeaderUdp.getSizeOfHeaderUdp());
+                System.arraycopy(data, i * (sizeOfPacket-HeaderUdp.getSizeOfHeaderUdp()), newData,HeaderUdp.getSizeOfHeaderUdp() ,
+                        sizeOfPacket-HeaderUdp.getSizeOfHeaderUdp());
+                headerUdp.setSizeOfMessage(sizeOfPacket-HeaderUdp.getSizeOfHeaderUdp());
+                listOfPackets.add(newData);
+                numberOfPacket++;
+
+            }else  {
+                headerUdp.setSizeOfMessage(data.length-i*(sizeOfPacket-HeaderUdp.getSizeOfHeaderUdp()));
+                headerUdp.setNumberOfPacket(numberOfPacket+i);
+                System.arraycopy(HeaderUdp.headerUdpToArrayOfBytes(headerUdp),0,newData,0, HeaderUdp.getSizeOfHeaderUdp());
+
+                System.arraycopy(data, i * (sizeOfPacket-HeaderUdp.getSizeOfHeaderUdp()),newData,HeaderUdp.getSizeOfHeaderUdp() ,
+                        data.length-i*(sizeOfPacket-HeaderUdp.getSizeOfHeaderUdp()) );
+                headerUdp.setSizeOfMessage(data.length-i*(sizeOfPacket-HeaderUdp.getSizeOfHeaderUdp()));
+                listOfPackets.add(newData);
+                break;
+            }
+            i++;
+        }
+    }
+
 
     public void downloadFileUdp(){
 

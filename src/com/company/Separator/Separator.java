@@ -1,6 +1,7 @@
 package com.company.Separator;
 
 import com.company.Header.Header;
+import com.company.HeaderUdp.HeaderUdp;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -11,11 +12,22 @@ import java.nio.charset.Charset;
 public class Separator {
     Header header;
     byte[] message;
+    HeaderUdp headerUdp;
+    byte[] messageUdp;
+
     boolean isTelnet;
     boolean isProtocol;
     boolean isUnknown;
     String telnetCommand;
     String messageTelnet;
+
+    public HeaderUdp getHeaderUdp() {
+        return headerUdp;
+    }
+
+    public byte[] getMessageUdp() {
+        return messageUdp;
+    }
 
     public String getMessageTelnet() {
         return messageTelnet;
@@ -94,6 +106,14 @@ public class Separator {
                 }
             }
         }
+    }
+
+    public void parceUdp(byte[] array){
+        headerUdp =  HeaderUdp.arrayOfBytesToHeaderUdp(array);
+        messageUdp = new byte[headerUdp.getSizeOfMessage()];
+        System.arraycopy(array,HeaderUdp.getSizeOfHeaderUdp(),messageUdp,0,messageUdp.length );
+
+
     }
 
     public boolean isProtocol() {
