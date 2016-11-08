@@ -69,11 +69,34 @@
             <state relative-caret-position="660">
               <caret line="49" column="30" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="30" />
               <folding>
+                <element signature="imports" expanded="false" />
                 <element signature="method#Header#0;class#Header#0" expanded="false" />
                 <element signature="method#Header#1;class#Header#0" expanded="false" />
+                <element signature="e#1067#1068#0" expanded="false" />
+                <element signature="e#1111#1112#0" expanded="false" />
                 <element signature="method#setCharacterTransferData#0;class#Header#0" expanded="false" />
+                <element signature="e#1303#1304#0" expanded="false" />
+                <element signature="e#1339#1340#0" expanded="false" />
                 <element signature="method#getNameCommand#0;class#Header#0" expanded="false" />
+                <element signature="e#1476#1477#0" expanded="false" />
+                <element signature="e#1522#1523#0" expanded="false" />
+                <element signature="e#1558#1559#0" expanded="false" />
+                <element signature="e#1593#1594#0" expanded="false" />
+                <element signature="e#1646#1647#0" expanded="false" />
+                <element signature="e#1694#1695#0" expanded="false" />
+                <element signature="e#1731#1732#0" expanded="false" />
+                <element signature="e#1767#1768#0" expanded="false" />
+                <element signature="e#1822#1823#0" expanded="false" />
+                <element signature="e#1872#1873#0" expanded="false" />
+                <element signature="e#1908#1909#0" expanded="false" />
+                <element signature="e#1943#1944#0" expanded="false" />
+                <element signature="e#1998#1999#0" expanded="false" />
+                <element signature="e#2048#2049#0" expanded="false" />
                 <element signature="method#setInformation#0;class#Header#0" expanded="false" />
+                <element signature="e#2473#2474#0" expanded="false" />
+                <element signature="e#2510#2511#0" expanded="false" />
+                <element signature="e#2567#2568#0" expanded="false" />
+                <element signature="e#2619#2620#0" expanded="false" />
                 <element signature="method#isHeader#0;class#Header#0" expanded="false" />
               </folding>
             </state>
@@ -123,13 +146,13 @@
       <file leaf-file-name="Server.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="477" column="46" selection-start-line="477" selection-start-column="46" selection-end-line="477" selection-end-column="46" />
+            <state relative-caret-position="-22">
+              <caret line="446" column="40" selection-start-line="446" selection-start-column="40" selection-end-line="446" selection-end-column="40" />
               <folding>
+                <element signature="method#doAnalize#0;class#Server#0" expanded="false" />
                 <element signature="e#1312#1361#0" expanded="false" />
                 <element signature="method#echoTelnet#0;class#Server#0" expanded="false" />
                 <element signature="method#timeTelnet#0;class#Server#0" expanded="false" />
-                <element signature="method#loadFile#0;class#Server#0" expanded="false" />
                 <element signature="method#readPackForFile#0;class#Server#0" expanded="false" />
                 <element signature="method#downloadFile#0;class#Server#0" expanded="false" />
                 <element signature="method#createListPackets#0;class#Server#0" expanded="false" />
@@ -866,11 +889,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="282168000" />
+    <option name="totallyTimeSpent" value="289744000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="69" y="-9" width="1860" height="1098" extended-state="6" />
-    <editor active="true" />
+    <frame x="69" y="-9" width="1860" height="1098" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -880,7 +903,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2988889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2988889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33521444" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -952,11 +975,34 @@
         <state relative-caret-position="0">
           <caret line="167" column="17" selection-start-line="167" selection-start-column="17" selection-end-line="167" selection-end-column="17" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="method#Header#0;class#Header#0" expanded="false" />
             <element signature="method#Header#1;class#Header#0" expanded="false" />
+            <element signature="e#1067#1068#0" expanded="false" />
+            <element signature="e#1111#1112#0" expanded="false" />
             <element signature="method#setCharacterTransferData#0;class#Header#0" expanded="false" />
+            <element signature="e#1303#1304#0" expanded="false" />
+            <element signature="e#1339#1340#0" expanded="false" />
             <element signature="method#getNameCommand#0;class#Header#0" expanded="false" />
+            <element signature="e#1476#1477#0" expanded="false" />
+            <element signature="e#1522#1523#0" expanded="false" />
+            <element signature="e#1558#1559#0" expanded="false" />
+            <element signature="e#1593#1594#0" expanded="false" />
+            <element signature="e#1646#1647#0" expanded="false" />
+            <element signature="e#1694#1695#0" expanded="false" />
+            <element signature="e#1731#1732#0" expanded="false" />
+            <element signature="e#1767#1768#0" expanded="false" />
+            <element signature="e#1822#1823#0" expanded="false" />
+            <element signature="e#1872#1873#0" expanded="false" />
+            <element signature="e#1908#1909#0" expanded="false" />
+            <element signature="e#1943#1944#0" expanded="false" />
+            <element signature="e#1998#1999#0" expanded="false" />
+            <element signature="e#2048#2049#0" expanded="false" />
             <element signature="method#setInformation#0;class#Header#0" expanded="false" />
+            <element signature="e#2473#2474#0" expanded="false" />
+            <element signature="e#2510#2511#0" expanded="false" />
+            <element signature="e#2567#2568#0" expanded="false" />
+            <element signature="e#2619#2620#0" expanded="false" />
             <element signature="method#isHeader#0;class#Header#0" expanded="false" />
           </folding>
         </state>
@@ -1010,10 +1056,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#doAnalize#0;class#Server#0" expanded="false" />
             <element signature="e#1312#1361#0" expanded="false" />
             <element signature="method#echoTelnet#0;class#Server#0" expanded="false" />
             <element signature="method#timeTelnet#0;class#Server#0" expanded="false" />
-            <element signature="method#loadFile#0;class#Server#0" expanded="false" />
             <element signature="method#readPackForFile#0;class#Server#0" expanded="false" />
             <element signature="method#downloadFile#0;class#Server#0" expanded="false" />
             <element signature="method#createListPackets#0;class#Server#0" expanded="false" />
@@ -1082,11 +1128,34 @@
         <state relative-caret-position="0">
           <caret line="167" column="17" selection-start-line="167" selection-start-column="17" selection-end-line="167" selection-end-column="17" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="method#Header#0;class#Header#0" expanded="false" />
             <element signature="method#Header#1;class#Header#0" expanded="false" />
+            <element signature="e#1067#1068#0" expanded="false" />
+            <element signature="e#1111#1112#0" expanded="false" />
             <element signature="method#setCharacterTransferData#0;class#Header#0" expanded="false" />
+            <element signature="e#1303#1304#0" expanded="false" />
+            <element signature="e#1339#1340#0" expanded="false" />
             <element signature="method#getNameCommand#0;class#Header#0" expanded="false" />
+            <element signature="e#1476#1477#0" expanded="false" />
+            <element signature="e#1522#1523#0" expanded="false" />
+            <element signature="e#1558#1559#0" expanded="false" />
+            <element signature="e#1593#1594#0" expanded="false" />
+            <element signature="e#1646#1647#0" expanded="false" />
+            <element signature="e#1694#1695#0" expanded="false" />
+            <element signature="e#1731#1732#0" expanded="false" />
+            <element signature="e#1767#1768#0" expanded="false" />
+            <element signature="e#1822#1823#0" expanded="false" />
+            <element signature="e#1872#1873#0" expanded="false" />
+            <element signature="e#1908#1909#0" expanded="false" />
+            <element signature="e#1943#1944#0" expanded="false" />
+            <element signature="e#1998#1999#0" expanded="false" />
+            <element signature="e#2048#2049#0" expanded="false" />
             <element signature="method#setInformation#0;class#Header#0" expanded="false" />
+            <element signature="e#2473#2474#0" expanded="false" />
+            <element signature="e#2510#2511#0" expanded="false" />
+            <element signature="e#2567#2568#0" expanded="false" />
+            <element signature="e#2619#2620#0" expanded="false" />
             <element signature="method#isHeader#0;class#Header#0" expanded="false" />
           </folding>
         </state>
@@ -1140,10 +1209,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#doAnalize#0;class#Server#0" expanded="false" />
             <element signature="e#1312#1361#0" expanded="false" />
             <element signature="method#echoTelnet#0;class#Server#0" expanded="false" />
             <element signature="method#timeTelnet#0;class#Server#0" expanded="false" />
-            <element signature="method#loadFile#0;class#Server#0" expanded="false" />
             <element signature="method#readPackForFile#0;class#Server#0" expanded="false" />
             <element signature="method#downloadFile#0;class#Server#0" expanded="false" />
             <element signature="method#createListPackets#0;class#Server#0" expanded="false" />
@@ -1212,11 +1281,34 @@
         <state relative-caret-position="0">
           <caret line="167" column="17" selection-start-line="167" selection-start-column="17" selection-end-line="167" selection-end-column="17" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="method#Header#0;class#Header#0" expanded="false" />
             <element signature="method#Header#1;class#Header#0" expanded="false" />
+            <element signature="e#1067#1068#0" expanded="false" />
+            <element signature="e#1111#1112#0" expanded="false" />
             <element signature="method#setCharacterTransferData#0;class#Header#0" expanded="false" />
+            <element signature="e#1303#1304#0" expanded="false" />
+            <element signature="e#1339#1340#0" expanded="false" />
             <element signature="method#getNameCommand#0;class#Header#0" expanded="false" />
+            <element signature="e#1476#1477#0" expanded="false" />
+            <element signature="e#1522#1523#0" expanded="false" />
+            <element signature="e#1558#1559#0" expanded="false" />
+            <element signature="e#1593#1594#0" expanded="false" />
+            <element signature="e#1646#1647#0" expanded="false" />
+            <element signature="e#1694#1695#0" expanded="false" />
+            <element signature="e#1731#1732#0" expanded="false" />
+            <element signature="e#1767#1768#0" expanded="false" />
+            <element signature="e#1822#1823#0" expanded="false" />
+            <element signature="e#1872#1873#0" expanded="false" />
+            <element signature="e#1908#1909#0" expanded="false" />
+            <element signature="e#1943#1944#0" expanded="false" />
+            <element signature="e#1998#1999#0" expanded="false" />
+            <element signature="e#2048#2049#0" expanded="false" />
             <element signature="method#setInformation#0;class#Header#0" expanded="false" />
+            <element signature="e#2473#2474#0" expanded="false" />
+            <element signature="e#2510#2511#0" expanded="false" />
+            <element signature="e#2567#2568#0" expanded="false" />
+            <element signature="e#2619#2620#0" expanded="false" />
             <element signature="method#isHeader#0;class#Header#0" expanded="false" />
           </folding>
         </state>
@@ -1270,10 +1362,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#doAnalize#0;class#Server#0" expanded="false" />
             <element signature="e#1312#1361#0" expanded="false" />
             <element signature="method#echoTelnet#0;class#Server#0" expanded="false" />
             <element signature="method#timeTelnet#0;class#Server#0" expanded="false" />
-            <element signature="method#loadFile#0;class#Server#0" expanded="false" />
             <element signature="method#readPackForFile#0;class#Server#0" expanded="false" />
             <element signature="method#downloadFile#0;class#Server#0" expanded="false" />
             <element signature="method#createListPackets#0;class#Server#0" expanded="false" />
@@ -1416,11 +1508,34 @@
         <state relative-caret-position="660">
           <caret line="49" column="30" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="30" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="method#Header#0;class#Header#0" expanded="false" />
             <element signature="method#Header#1;class#Header#0" expanded="false" />
+            <element signature="e#1067#1068#0" expanded="false" />
+            <element signature="e#1111#1112#0" expanded="false" />
             <element signature="method#setCharacterTransferData#0;class#Header#0" expanded="false" />
+            <element signature="e#1303#1304#0" expanded="false" />
+            <element signature="e#1339#1340#0" expanded="false" />
             <element signature="method#getNameCommand#0;class#Header#0" expanded="false" />
+            <element signature="e#1476#1477#0" expanded="false" />
+            <element signature="e#1522#1523#0" expanded="false" />
+            <element signature="e#1558#1559#0" expanded="false" />
+            <element signature="e#1593#1594#0" expanded="false" />
+            <element signature="e#1646#1647#0" expanded="false" />
+            <element signature="e#1694#1695#0" expanded="false" />
+            <element signature="e#1731#1732#0" expanded="false" />
+            <element signature="e#1767#1768#0" expanded="false" />
+            <element signature="e#1822#1823#0" expanded="false" />
+            <element signature="e#1872#1873#0" expanded="false" />
+            <element signature="e#1908#1909#0" expanded="false" />
+            <element signature="e#1943#1944#0" expanded="false" />
+            <element signature="e#1998#1999#0" expanded="false" />
+            <element signature="e#2048#2049#0" expanded="false" />
             <element signature="method#setInformation#0;class#Header#0" expanded="false" />
+            <element signature="e#2473#2474#0" expanded="false" />
+            <element signature="e#2510#2511#0" expanded="false" />
+            <element signature="e#2567#2568#0" expanded="false" />
+            <element signature="e#2619#2620#0" expanded="false" />
             <element signature="method#isHeader#0;class#Header#0" expanded="false" />
           </folding>
         </state>
@@ -1500,13 +1615,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="477" column="46" selection-start-line="477" selection-start-column="46" selection-end-line="477" selection-end-column="46" />
+        <state relative-caret-position="-22">
+          <caret line="446" column="40" selection-start-line="446" selection-start-column="40" selection-end-line="446" selection-end-column="40" />
           <folding>
+            <element signature="method#doAnalize#0;class#Server#0" expanded="false" />
             <element signature="e#1312#1361#0" expanded="false" />
             <element signature="method#echoTelnet#0;class#Server#0" expanded="false" />
             <element signature="method#timeTelnet#0;class#Server#0" expanded="false" />
-            <element signature="method#loadFile#0;class#Server#0" expanded="false" />
             <element signature="method#readPackForFile#0;class#Server#0" expanded="false" />
             <element signature="method#downloadFile#0;class#Server#0" expanded="false" />
             <element signature="method#createListPackets#0;class#Server#0" expanded="false" />

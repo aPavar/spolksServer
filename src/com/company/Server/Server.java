@@ -444,18 +444,20 @@ public class Server {
         int countOfPacketsUdp = separator.getHeader().getCountOfPacket();
         System.out.println("countsOfPacketUdp = " + countOfPacketsUdp);
 
+        int number = separator.getHeader().getNumberOfPacket();
+        try ( DatagramSocket dataGramSocket = new DatagramSocket(24001)){
 
 
-        DatagramSocket dataGramSocket = new DatagramSocket(24001);
         dataGramSocket.setSoTimeout(22000);
         dataGramSocket.setSendBufferSize(2*Controller.sizeOfPackageUdp);
         dataGramSocket.setReceiveBufferSize(1000*Controller.sizeOfPackageUdp);
         byte[] dataFromClient = new byte[Controller.sizeOfPackageUdp];
         byte[] dataToClient = new byte[Controller.sizeOfPackageUdp];
         File file = new File();
+        long pos = separator.getHeader().getNumberOfPacket()*(Controller.sizeOfPackageUdp-HeaderUdp.getSizeOfHeaderUdp());
 
 
-        for(int i = 0; i < countOfPacketsUdp; i++){
+        for(int i = number; i < countOfPacketsUdp; i++){
 
             System.out.println(i);
             DatagramPacket datagramPacketReceive = new DatagramPacket(dataFromClient, dataFromClient.length);
@@ -465,7 +467,9 @@ public class Server {
 
             separator.parceUdp(dataFromClient);
 
-            file.writeInfoInFile(fileName,separator.getMessageUdp(),i*(Controller.sizeOfPackageUdp-HeaderUdp.getSizeOfHeaderUdp()));
+            file.writeInfoInFile(fileName,separator.getMessageUdp(),pos );
+
+            pos += (Controller.sizeOfPackageUdp-HeaderUdp.getSizeOfHeaderUdp());
 
             System.out.println("SizeOfMessageUdp :" + separator.getHeaderUdp().getSizeOfMessage());
 
@@ -474,8 +478,11 @@ public class Server {
 
 
         }
+
        // socket.getInputStream().skip(1000000);
         readPackForFile(socket, dataFromClient);
+        }
+
         System.out.println("EndFunctionUdpLoad");
     }
 
