@@ -10,7 +10,7 @@ import java.nio.ByteBuffer;
  * Created by apava on 25.09.2016.
  */
 public class Header {
-    static long protocolID=1958869254;
+   public static long protocolID = 1958869254;
     CharacterTransferData characterTransferData;
     NameCommand nameCommand;
     int numberOfPacket;

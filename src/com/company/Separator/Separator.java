@@ -108,6 +108,10 @@ public class Separator {
         }
     }
 
+    public void setProtocol(boolean protocol) {
+        isProtocol = protocol;
+    }
+
     public void parceUdp(byte[] array){
         headerUdp =  HeaderUdp.arrayOfBytesToHeaderUdp(array);
         messageUdp = new byte[headerUdp.getSizeOfMessage()];

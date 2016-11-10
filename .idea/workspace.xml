@@ -18,6 +18,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/SPOLKS(Server)$Main.coverage" NAME="Main Coverage Results" MODIFIED="1478740655702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -42,8 +45,8 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-110">
-              <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+            <state relative-caret-position="258">
+              <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#newConnection#0;class#Controller#0" expanded="false" />
@@ -66,37 +69,14 @@
       <file leaf-file-name="Header.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Header/Header.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="49" column="30" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="30" />
+            <state relative-caret-position="-1672">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
               <folding>
-                <element signature="imports" expanded="false" />
                 <element signature="method#Header#0;class#Header#0" expanded="false" />
                 <element signature="method#Header#1;class#Header#0" expanded="false" />
-                <element signature="e#1067#1068#0" expanded="false" />
-                <element signature="e#1111#1112#0" expanded="false" />
                 <element signature="method#setCharacterTransferData#0;class#Header#0" expanded="false" />
-                <element signature="e#1303#1304#0" expanded="false" />
-                <element signature="e#1339#1340#0" expanded="false" />
                 <element signature="method#getNameCommand#0;class#Header#0" expanded="false" />
-                <element signature="e#1476#1477#0" expanded="false" />
-                <element signature="e#1522#1523#0" expanded="false" />
-                <element signature="e#1558#1559#0" expanded="false" />
-                <element signature="e#1593#1594#0" expanded="false" />
-                <element signature="e#1646#1647#0" expanded="false" />
-                <element signature="e#1694#1695#0" expanded="false" />
-                <element signature="e#1731#1732#0" expanded="false" />
-                <element signature="e#1767#1768#0" expanded="false" />
-                <element signature="e#1822#1823#0" expanded="false" />
-                <element signature="e#1872#1873#0" expanded="false" />
-                <element signature="e#1908#1909#0" expanded="false" />
-                <element signature="e#1943#1944#0" expanded="false" />
-                <element signature="e#1998#1999#0" expanded="false" />
-                <element signature="e#2048#2049#0" expanded="false" />
                 <element signature="method#setInformation#0;class#Header#0" expanded="false" />
-                <element signature="e#2473#2474#0" expanded="false" />
-                <element signature="e#2510#2511#0" expanded="false" />
-                <element signature="e#2567#2568#0" expanded="false" />
-                <element signature="e#2619#2620#0" expanded="false" />
                 <element signature="method#isHeader#0;class#Header#0" expanded="false" />
               </folding>
             </state>
@@ -146,8 +126,8 @@
       <file leaf-file-name="Server.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-22">
-              <caret line="446" column="40" selection-start-line="446" selection-start-column="40" selection-end-line="446" selection-end-column="40" />
+            <state relative-caret-position="264">
+              <caret line="172" column="23" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="23" />
               <folding>
                 <element signature="method#doAnalize#0;class#Server#0" expanded="false" />
                 <element signature="e#1312#1361#0" expanded="false" />
@@ -166,6 +146,7 @@
                 <element signature="method#sendPackage#0;class#Server#0" expanded="false" />
                 <element signature="method#readPackage#0;class#Server#0" expanded="false" />
                 <element signature="method#getTime#0;class#Server#0" expanded="false" />
+                <element signature="method#loadFileUdp#0;class#Server#0" expanded="false" />
                 <element signature="method#createListPacketsUdp#1;class#Server#0" expanded="false" />
                 <element signature="method#downloadFileUdp#0;class#Server#0" expanded="false" />
               </folding>
@@ -176,10 +157,11 @@
       <file leaf-file-name="Separator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Separator/Separator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="110" column="38" selection-start-line="110" selection-start-column="38" selection-end-line="110" selection-end-column="38" />
+            <state relative-caret-position="566">
+              <caret line="110" column="47" selection-start-line="110" selection-start-column="47" selection-end-line="110" selection-end-column="47" />
               <folding>
                 <element signature="method#parce#0;class#Separator#0" expanded="false" />
+                <element signature="e#2765#2766#0" expanded="true" />
                 <element signature="method#parceUdp#0;class#Separator#0" expanded="false" />
               </folding>
             </state>
@@ -229,13 +211,13 @@
         <option value="$PROJECT_DIR$/src/com/company/SpecialData/SpecialData.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/UndefinedProtocol/UndefinedProtocol.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Header/Header.java" />
         <option value="$PROJECT_DIR$/src/com/company/NameCommand/NameCommand.java" />
         <option value="$PROJECT_DIR$/src/com/company/File/File.java" />
         <option value="$PROJECT_DIR$/src/com/company/StructureOfReturnValue/StructureOfReturnValue.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/com/company/HeaderUdp/HeaderUdp.java" />
         <option value="$PROJECT_DIR$/src/com/company/Separator/Separator.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Header/Header.java" />
         <option value="$PROJECT_DIR$/src/com/company/Controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/com/company/Server/Server.java" />
       </list>
@@ -385,6 +367,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Separator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SPOLKS(Server)" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SPOLKS(Server)" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Header" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -889,11 +893,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289744000" />
+    <option name="totallyTimeSpent" value="322294000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="69" y="-9" width="1860" height="1098" extended-state="7" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -904,6 +908,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2988889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33521444" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -975,34 +980,11 @@
         <state relative-caret-position="0">
           <caret line="167" column="17" selection-start-line="167" selection-start-column="17" selection-end-line="167" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#Header#0;class#Header#0" expanded="false" />
             <element signature="method#Header#1;class#Header#0" expanded="false" />
-            <element signature="e#1067#1068#0" expanded="false" />
-            <element signature="e#1111#1112#0" expanded="false" />
             <element signature="method#setCharacterTransferData#0;class#Header#0" expanded="false" />
-            <element signature="e#1303#1304#0" expanded="false" />
-            <element signature="e#1339#1340#0" expanded="false" />
             <element signature="method#getNameCommand#0;class#Header#0" expanded="false" />
-            <element signature="e#1476#1477#0" expanded="false" />
-            <element signature="e#1522#1523#0" expanded="false" />
-            <element signature="e#1558#1559#0" expanded="false" />
-            <element signature="e#1593#1594#0" expanded="false" />
-            <element signature="e#1646#1647#0" expanded="false" />
-            <element signature="e#1694#1695#0" expanded="false" />
-            <element signature="e#1731#1732#0" expanded="false" />
-            <element signature="e#1767#1768#0" expanded="false" />
-            <element signature="e#1822#1823#0" expanded="false" />
-            <element signature="e#1872#1873#0" expanded="false" />
-            <element signature="e#1908#1909#0" expanded="false" />
-            <element signature="e#1943#1944#0" expanded="false" />
-            <element signature="e#1998#1999#0" expanded="false" />
-            <element signature="e#2048#2049#0" expanded="false" />
             <element signature="method#setInformation#0;class#Header#0" expanded="false" />
-            <element signature="e#2473#2474#0" expanded="false" />
-            <element signature="e#2510#2511#0" expanded="false" />
-            <element signature="e#2567#2568#0" expanded="false" />
-            <element signature="e#2619#2620#0" expanded="false" />
             <element signature="method#isHeader#0;class#Header#0" expanded="false" />
           </folding>
         </state>
@@ -1073,6 +1055,7 @@
             <element signature="method#sendPackage#0;class#Server#0" expanded="false" />
             <element signature="method#readPackage#0;class#Server#0" expanded="false" />
             <element signature="method#getTime#0;class#Server#0" expanded="false" />
+            <element signature="method#loadFileUdp#0;class#Server#0" expanded="false" />
             <element signature="method#createListPacketsUdp#1;class#Server#0" expanded="false" />
             <element signature="method#downloadFileUdp#0;class#Server#0" expanded="false" />
           </folding>
@@ -1128,34 +1111,11 @@
         <state relative-caret-position="0">
           <caret line="167" column="17" selection-start-line="167" selection-start-column="17" selection-end-line="167" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#Header#0;class#Header#0" expanded="false" />
             <element signature="method#Header#1;class#Header#0" expanded="false" />
-            <element signature="e#1067#1068#0" expanded="false" />
-            <element signature="e#1111#1112#0" expanded="false" />
             <element signature="method#setCharacterTransferData#0;class#Header#0" expanded="false" />
-            <element signature="e#1303#1304#0" expanded="false" />
-            <element signature="e#1339#1340#0" expanded="false" />
             <element signature="method#getNameCommand#0;class#Header#0" expanded="false" />
-            <element signature="e#1476#1477#0" expanded="false" />
-            <element signature="e#1522#1523#0" expanded="false" />
-            <element signature="e#1558#1559#0" expanded="false" />
-            <element signature="e#1593#1594#0" expanded="false" />
-            <element signature="e#1646#1647#0" expanded="false" />
-            <element signature="e#1694#1695#0" expanded="false" />
-            <element signature="e#1731#1732#0" expanded="false" />
-            <element signature="e#1767#1768#0" expanded="false" />
-            <element signature="e#1822#1823#0" expanded="false" />
-            <element signature="e#1872#1873#0" expanded="false" />
-            <element signature="e#1908#1909#0" expanded="false" />
-            <element signature="e#1943#1944#0" expanded="false" />
-            <element signature="e#1998#1999#0" expanded="false" />
-            <element signature="e#2048#2049#0" expanded="false" />
             <element signature="method#setInformation#0;class#Header#0" expanded="false" />
-            <element signature="e#2473#2474#0" expanded="false" />
-            <element signature="e#2510#2511#0" expanded="false" />
-            <element signature="e#2567#2568#0" expanded="false" />
-            <element signature="e#2619#2620#0" expanded="false" />
             <element signature="method#isHeader#0;class#Header#0" expanded="false" />
           </folding>
         </state>
@@ -1226,6 +1186,7 @@
             <element signature="method#sendPackage#0;class#Server#0" expanded="false" />
             <element signature="method#readPackage#0;class#Server#0" expanded="false" />
             <element signature="method#getTime#0;class#Server#0" expanded="false" />
+            <element signature="method#loadFileUdp#0;class#Server#0" expanded="false" />
             <element signature="method#createListPacketsUdp#1;class#Server#0" expanded="false" />
             <element signature="method#downloadFileUdp#0;class#Server#0" expanded="false" />
           </folding>
@@ -1281,34 +1242,11 @@
         <state relative-caret-position="0">
           <caret line="167" column="17" selection-start-line="167" selection-start-column="17" selection-end-line="167" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#Header#0;class#Header#0" expanded="false" />
             <element signature="method#Header#1;class#Header#0" expanded="false" />
-            <element signature="e#1067#1068#0" expanded="false" />
-            <element signature="e#1111#1112#0" expanded="false" />
             <element signature="method#setCharacterTransferData#0;class#Header#0" expanded="false" />
-            <element signature="e#1303#1304#0" expanded="false" />
-            <element signature="e#1339#1340#0" expanded="false" />
             <element signature="method#getNameCommand#0;class#Header#0" expanded="false" />
-            <element signature="e#1476#1477#0" expanded="false" />
-            <element signature="e#1522#1523#0" expanded="false" />
-            <element signature="e#1558#1559#0" expanded="false" />
-            <element signature="e#1593#1594#0" expanded="false" />
-            <element signature="e#1646#1647#0" expanded="false" />
-            <element signature="e#1694#1695#0" expanded="false" />
-            <element signature="e#1731#1732#0" expanded="false" />
-            <element signature="e#1767#1768#0" expanded="false" />
-            <element signature="e#1822#1823#0" expanded="false" />
-            <element signature="e#1872#1873#0" expanded="false" />
-            <element signature="e#1908#1909#0" expanded="false" />
-            <element signature="e#1943#1944#0" expanded="false" />
-            <element signature="e#1998#1999#0" expanded="false" />
-            <element signature="e#2048#2049#0" expanded="false" />
             <element signature="method#setInformation#0;class#Header#0" expanded="false" />
-            <element signature="e#2473#2474#0" expanded="false" />
-            <element signature="e#2510#2511#0" expanded="false" />
-            <element signature="e#2567#2568#0" expanded="false" />
-            <element signature="e#2619#2620#0" expanded="false" />
             <element signature="method#isHeader#0;class#Header#0" expanded="false" />
           </folding>
         </state>
@@ -1379,6 +1317,7 @@
             <element signature="method#sendPackage#0;class#Server#0" expanded="false" />
             <element signature="method#readPackage#0;class#Server#0" expanded="false" />
             <element signature="method#getTime#0;class#Server#0" expanded="false" />
+            <element signature="method#loadFileUdp#0;class#Server#0" expanded="false" />
             <element signature="method#createListPacketsUdp#1;class#Server#0" expanded="false" />
             <element signature="method#downloadFileUdp#0;class#Server#0" expanded="false" />
           </folding>
@@ -1503,44 +1442,6 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_74/src.zip!/java/util/ArrayList.java" />
     <entry file="file://G:/RAD_SPOLKS/SPOLKS/SPOLKS.iml" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/Header/Header.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="49" column="30" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#Header#0;class#Header#0" expanded="false" />
-            <element signature="method#Header#1;class#Header#0" expanded="false" />
-            <element signature="e#1067#1068#0" expanded="false" />
-            <element signature="e#1111#1112#0" expanded="false" />
-            <element signature="method#setCharacterTransferData#0;class#Header#0" expanded="false" />
-            <element signature="e#1303#1304#0" expanded="false" />
-            <element signature="e#1339#1340#0" expanded="false" />
-            <element signature="method#getNameCommand#0;class#Header#0" expanded="false" />
-            <element signature="e#1476#1477#0" expanded="false" />
-            <element signature="e#1522#1523#0" expanded="false" />
-            <element signature="e#1558#1559#0" expanded="false" />
-            <element signature="e#1593#1594#0" expanded="false" />
-            <element signature="e#1646#1647#0" expanded="false" />
-            <element signature="e#1694#1695#0" expanded="false" />
-            <element signature="e#1731#1732#0" expanded="false" />
-            <element signature="e#1767#1768#0" expanded="false" />
-            <element signature="e#1822#1823#0" expanded="false" />
-            <element signature="e#1872#1873#0" expanded="false" />
-            <element signature="e#1908#1909#0" expanded="false" />
-            <element signature="e#1943#1944#0" expanded="false" />
-            <element signature="e#1998#1999#0" expanded="false" />
-            <element signature="e#2048#2049#0" expanded="false" />
-            <element signature="method#setInformation#0;class#Header#0" expanded="false" />
-            <element signature="e#2473#2474#0" expanded="false" />
-            <element signature="e#2510#2511#0" expanded="false" />
-            <element signature="e#2567#2568#0" expanded="false" />
-            <element signature="e#2619#2620#0" expanded="false" />
-            <element signature="method#isHeader#0;class#Header#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/StructureOfReturnValue/StructureOfReturnValue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -1592,8 +1493,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+        <state relative-caret-position="258">
+          <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#newConnection#0;class#Controller#0" expanded="false" />
@@ -1604,19 +1505,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Separator/Separator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="110" column="38" selection-start-line="110" selection-start-column="38" selection-end-line="110" selection-end-column="38" />
+        <state relative-caret-position="566">
+          <caret line="110" column="47" selection-start-line="110" selection-start-column="47" selection-end-line="110" selection-end-column="47" />
           <folding>
             <element signature="method#parce#0;class#Separator#0" expanded="false" />
+            <element signature="e#2765#2766#0" expanded="true" />
             <element signature="method#parceUdp#0;class#Separator#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Header/Header.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1672">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <element signature="method#Header#0;class#Header#0" expanded="false" />
+            <element signature="method#Header#1;class#Header#0" expanded="false" />
+            <element signature="method#setCharacterTransferData#0;class#Header#0" expanded="false" />
+            <element signature="method#getNameCommand#0;class#Header#0" expanded="false" />
+            <element signature="method#setInformation#0;class#Header#0" expanded="false" />
+            <element signature="method#isHeader#0;class#Header#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="446" column="40" selection-start-line="446" selection-start-column="40" selection-end-line="446" selection-end-column="40" />
+        <state relative-caret-position="264">
+          <caret line="172" column="23" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="23" />
           <folding>
             <element signature="method#doAnalize#0;class#Server#0" expanded="false" />
             <element signature="e#1312#1361#0" expanded="false" />
@@ -1635,6 +1552,7 @@
             <element signature="method#sendPackage#0;class#Server#0" expanded="false" />
             <element signature="method#readPackage#0;class#Server#0" expanded="false" />
             <element signature="method#getTime#0;class#Server#0" expanded="false" />
+            <element signature="method#loadFileUdp#0;class#Server#0" expanded="false" />
             <element signature="method#createListPacketsUdp#1;class#Server#0" expanded="false" />
             <element signature="method#downloadFileUdp#0;class#Server#0" expanded="false" />
           </folding>

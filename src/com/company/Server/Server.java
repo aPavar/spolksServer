@@ -133,29 +133,113 @@ public class Server {
         int sm=0;
         long pos=a*(Controller.sizeOfPackage-Header.sizeOfHeader);
         int size=0;
+        int countOfPacketsUrgentData =0;
+        boolean isProtocol=false;
+        byte[] forUrg = new byte[1];
        // socket.getOutputStream().write("lol".getBytes());
+        byte[] bigArrray= new byte[24000000];
+        byte [] swap = new byte[1];
         for(int i=0;i<separator.getHeader().getCountOfPacket()-a;i++){
             arrayFromClient=new byte[Controller.sizeOfPackage];
 
 
-            readPackFull(socket,arrayFromClient);
+        //    readPackFull(socket,arrayFromClient);
            // socket.getOutputStream().write("lol".getBytes());
 
             //
 
 
-            separator.parce(arrayFromClient);
+          //  separator.parce(arrayFromClient);
+          //  if(!separator.isProtocol())
+              //  while(!isProtocol){
+                 //   readPackFull(socket, arrayFromClient);
+
+                 byte[] readFirst = new byte[8];
+                 byte[] shift = new byte[1];
+                 byte[] data = new byte[Controller.sizeOfPackage-8];
+                 int aaa= socket.getInputStream().read(readFirst);
+                 ByteBuffer byteBuffer= ByteBuffer.allocate(Long.BYTES);
+                 byteBuffer.put(readFirst);
+                 byteBuffer.flip();
+                 long lon = byteBuffer.getLong();
+        //    System.out.println(lon);
+
+                    while (lon != Header.protocolID) {
+                        Byte b= readFirst[0];
+                        int Int =b.intValue();
+                     //   if(Int>-96&& Int<-80)
+                        if(Int!=0)
+                            countOfPacketsUrgentData += 1;
+                     //  System.out.println("Int :"+Int);
+                        socket.getInputStream().read(shift);
+                        System.arraycopy(readFirst, 1, readFirst, 0, 1);
+                        System.arraycopy(readFirst, 2, readFirst, 1, 1);
+                        System.arraycopy(readFirst, 3, readFirst, 2, 1);
+                        System.arraycopy(readFirst, 4, readFirst, 3, 1);
+                        System.arraycopy(readFirst, 5, readFirst, 4, 1);
+                        System.arraycopy(readFirst, 6, readFirst, 5, 1);
+                        System.arraycopy(readFirst, 7, readFirst, 6, 1);
+                        System.arraycopy(shift, 0, readFirst, 7, 1);
+                     //   countOfPacketsUrgentData += 1;
+                        byteBuffer = ByteBuffer.allocate(Long.BYTES);
+                        byteBuffer.put(readFirst);
+                        byteBuffer.flip();
+                        lon = byteBuffer.getLong();
+
+                }
+                 socket.getInputStream().read(data);
+                 System.arraycopy(readFirst,0,arrayFromClient,0,8);
+                 System.arraycopy(data, 0, arrayFromClient, 8, Controller.sizeOfPackage-8);
+
+
+
+
+
+
+
+
+
+               //   int aa= socket.getInputStream().read(arrayFromClient);
+
+               //     System.out.println("aa is "+ aa);
+                   // System.arraycopy(bigArrray,0,arrayFromClient,0,Controller.sizeOfPackage);
+
+                    separator.parce(arrayFromClient);
+
+                //    if(separator.isProtocol())
+                   //     isProtocol=true;
+                  //  else {
+                  //      socket.getInputStream().read(arrayFromClient);
+                       // aa=socket.getInputStream().read(arrayFromClient);
+                   //     countOfPacketsUrgentData +=1;
+                  //      for(int jaga = 0; jaga <32;jaga++)
+                  //      System.out.println(arrayFromClient[jaga]);
+
+
+
+                       // while(aa==Controller.sizeOfPackage)
+                        //    aa=socket.getInputStream().read(arrayFromClient);
+                      //  System.arraycopy(arrayFromClient, 0, swap, 0, 1);
+                      //  System.arraycopy(forUrg,0,arrayFromClient,0,1);
+                      //  readPackForFile(socket, bigArrray);
+                 //   }
+
+
+
+
+                isProtocol = false;
+
             System.out.println(separator.getHeader().getNumberOfPacket());
             if(separator.getHeader().getNameCommand()!=NameCommand.loadFile)
                 throw new SocketException();
-            if(separator.getHeader().getNumberOfPacket()<i) {
-                i = separator.getHeader().getNumberOfPacket();
-                file.writeInfoInFileSpec(nameOfFile,cache,pos,size);
-                pos=i*(Controller.sizeOfPackage-Header.sizeOfHeader);
-                sm=0;
-                j=0;
-                size=0;
-            }
+       //     if(separator.getHeader().getNumberOfPacket()<i) {
+       //         i = separator.getHeader().getNumberOfPacket();
+       //         file.writeInfoInFileSpec(nameOfFile,cache,pos,size);
+       //         pos=i*(Controller.sizeOfPackage-Header.sizeOfHeader);
+       //         sm=0;
+      //          j=0;
+      //          size=0;
+      //      }
 
             System.arraycopy(separator.getMessage(),0,cache,sm,separator.getHeader().getSizeOfMessage());
             sm+=separator.getHeader().getSizeOfMessage();
@@ -185,7 +269,7 @@ public class Server {
 
         }
 
-
+        System.out.println("CountsOfUrgentData = " +countOfPacketsUrgentData);
 
     }
 
