@@ -139,6 +139,7 @@ public class Server {
        // socket.getOutputStream().write("lol".getBytes());
         byte[] bigArrray= new byte[24000000];
         byte [] swap = new byte[1];
+        Long time1 = System.currentTimeMillis();
         for(int i=0;i<separator.getHeader().getCountOfPacket()-a;i++){
             arrayFromClient=new byte[Controller.sizeOfPackage];
 
@@ -168,8 +169,10 @@ public class Server {
                         Byte b= readFirst[0];
                         int Int =b.intValue();
                      //   if(Int>-96&& Int<-80)
-                        if(Int!=0)
+                        if(Int!=0) {
                             countOfPacketsUrgentData += 1;
+                        //    System.out.println("Urgent data = "+Int);
+                        }
                      //  System.out.println("Int :"+Int);
                         socket.getInputStream().read(shift);
                         System.arraycopy(readFirst, 1, readFirst, 0, 1);
@@ -229,7 +232,7 @@ public class Server {
 
                 isProtocol = false;
 
-            System.out.println(separator.getHeader().getNumberOfPacket());
+         //   System.out.println(separator.getHeader().getNumberOfPacket());
             if(separator.getHeader().getNameCommand()!=NameCommand.loadFile)
                 throw new SocketException();
        //     if(separator.getHeader().getNumberOfPacket()<i) {
@@ -268,8 +271,10 @@ public class Server {
                 file.writeInfoInFileSpec(nameOfFile,cache,pos,size);
 
         }
-
-        System.out.println("CountsOfUrgentData = " +countOfPacketsUrgentData);
+        Long time2 = System.currentTimeMillis();
+        System.out.println("time tcp " + (time2-time1));
+      //  System.out.println("CountsOfUrgentData = " +countOfPacketsUrgentData);
+       // System.out.println("Speed "+ Controller.sizeOfPackage/ )
 
     }
 
@@ -532,18 +537,18 @@ public class Server {
         try ( DatagramSocket dataGramSocket = new DatagramSocket(24001)){
 
 
-        dataGramSocket.setSoTimeout(22000);
+        dataGramSocket.setSoTimeout(5000);
         dataGramSocket.setSendBufferSize(2*Controller.sizeOfPackageUdp);
         dataGramSocket.setReceiveBufferSize(1000*Controller.sizeOfPackageUdp);
         byte[] dataFromClient = new byte[Controller.sizeOfPackageUdp];
         byte[] dataToClient = new byte[Controller.sizeOfPackageUdp];
         File file = new File();
         long pos = separator.getHeader().getNumberOfPacket()*(Controller.sizeOfPackageUdp-HeaderUdp.getSizeOfHeaderUdp());
-
+           Long time1= System.currentTimeMillis();
 
         for(int i = number; i < countOfPacketsUdp; i++){
 
-            System.out.println(i);
+         //   System.out.println(i);
             DatagramPacket datagramPacketReceive = new DatagramPacket(dataFromClient, dataFromClient.length);
             dataGramSocket.receive(datagramPacketReceive);
             InetAddress inetAddress = datagramPacketReceive.getAddress();
@@ -555,7 +560,7 @@ public class Server {
 
             pos += (Controller.sizeOfPackageUdp-HeaderUdp.getSizeOfHeaderUdp());
 
-            System.out.println("SizeOfMessageUdp :" + separator.getHeaderUdp().getSizeOfMessage());
+           // System.out.println("SizeOfMessageUdp :" + separator.getHeaderUdp().getSizeOfMessage());
 
             DatagramPacket datagramPacketSend = new DatagramPacket(dataToClient,dataToClient.length, inetAddress,port );
             dataGramSocket.send(datagramPacketSend);
@@ -565,10 +570,14 @@ public class Server {
 
        // socket.getInputStream().skip(1000000);
         readPackForFile(socket, dataFromClient);
+            Long time2 = System.currentTimeMillis();
+            System.out.println(time2- time1);
         }
 
         System.out.println("EndFunctionUdpLoad");
     }
+
+
 
     public void createListPacketsUdp(){
 

@@ -1,6 +1,7 @@
 package com.company.Controller;
 
 import com.company.CharacterTransferData.CharacterTransferData;
+import com.company.ClientThread.ClientThread;
 import com.company.File.File;
 import com.company.Header.Header;
 import com.company.KitOfHeaders.KitOfHeaders;
@@ -18,12 +19,14 @@ import java.net.Socket;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 
 public class Controller {
     public static int sizeOfPackage= 1024;
     public static int port=6000;
-    public static int sizeOfPackageUdp = 16384;
+    public static int sizeOfPackageUdp = 32768;
 
 public static void newConnection(Socket connectionSocket) throws IOException, ClassNotFoundException {
     String clientSentence;
@@ -44,7 +47,9 @@ public static void newConnection(Socket connectionSocket) throws IOException, Cl
     public static void move() throws IOException, ClassNotFoundException {
 
         System.out.println("Server start");
+        ExecutorService executorService = Executors.newFixedThreadPool(2);
     ServerSocket welcomeSocket = new ServerSocket(port);
+
 
 
     while (true) {
@@ -56,7 +61,9 @@ public static void newConnection(Socket connectionSocket) throws IOException, Cl
         connectionSocket.setReceiveBufferSize(1000*Controller.sizeOfPackage);
         connectionSocket.setSendBufferSize(2*Controller.sizeOfPackage);
         System.out.println("New Connection");
-        newConnection(connectionSocket);
+        Runnable worker = new ClientThread(connectionSocket);
+        executorService.execute(worker);
+      //  newConnection(connectionSocket);
 
         }
     }
